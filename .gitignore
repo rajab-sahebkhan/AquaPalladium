@@ -218,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local datasets and generated outputs
+# Uncomment if raw data should remain local:
+# data/raw/
+# outputs/
+
+# Local editor settings
+.vscode/
+
+# Python environment files
+.env.*
+!.env.example
+
+# Project datasets and generated analysis outputs
+data/raw/
+data/processed/
+outputs/
+
+# Keep directory structure with placeholders if needed
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/.gitkeep
