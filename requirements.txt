@@ -1,5 +1,8 @@
-numpy
+﻿numpy
 pandas
 matplotlib
+scikit-learn
+plotly
+streamlit
 pytest
 openpyxl
