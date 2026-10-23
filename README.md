@@ -1,5 +1,9 @@
 # AquaPalladium 🌊
 
+🚀 **Live Demo:** [Open AquaPalladium](https://aquapalladium.streamlit.app/)
+
+Explore desalination sensor analytics, anomaly detection, data quality assessment, and exploratory cleaning-frequency prediction.
+
 **Desalination analytics, sensor monitoring, and exploratory machine learning using Python.**
 
 AquaPalladium is an independent portfolio project exploring seawater reverse osmosis (SWRO) performance and data-driven desalination monitoring. It combines experimental data processing, statistical analysis, interactive visualization, data-quality checks, anomaly detection, and exploratory machine learning in a reproducible Python workflow.
