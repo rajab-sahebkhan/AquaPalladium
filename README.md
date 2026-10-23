@@ -27,11 +27,11 @@ The sensor analytics workstream is exploratory. Its dataset provenance and targe
 
 The Streamlit application provides five views:
 
-1. **Executive overview** â€” a high-level summary of the available sensor data.
-2. **Operating explorer** â€” exploration of operating conditions and relationships between variables.
-3. **Cleaning intelligence** â€” exploratory cleaning-frequency prediction and model metrics.
-4. **Anomaly intelligence** â€” inspection of unusual records flagged by an unsupervised anomaly-detection model.
-5. **Data quality** â€” inspection of missing values and other data-quality issues.
+1. **Executive overview** — a high-level summary of the available sensor data.
+2. **Operating explorer** — exploration of operating conditions and relationships between variables.
+3. **Cleaning intelligence** — exploratory cleaning-frequency prediction and model metrics.
+4. **Anomaly intelligence** — inspection of unusual records flagged by an unsupervised anomaly-detection model.
+5. **Data quality** — inspection of missing values and other data-quality issues.
 
 ### Run the dashboard
 
@@ -93,7 +93,7 @@ Raw datasets are not automatically included in version control. Before publishin
 AquaPalladium/
 ├── data/
 │   ├── raw/
-│   â””── processed/
+│   └── processed/
 ├── docs/
 ├── outputs/
 ├── src/
@@ -107,12 +107,12 @@ AquaPalladium/
 │   ├── visualization.py
 │   ├── anomaly_detection.py
 │   ├── data_quality_report.py
-│   â””── ... exploratory audit scripts
+│   └── ... exploratory audit scripts
 ├── tests/
 ├── app.py
 ├── main.py
 ├── requirements.txt
-â””── README.md
+└── README.md
 ```
 
 Generated reports and intermediate outputs are stored under `outputs/`. The precise set of analysis scripts may evolve as the project develops.
