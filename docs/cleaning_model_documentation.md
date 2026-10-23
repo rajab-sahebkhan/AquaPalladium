@@ -1,4 +1,4 @@
-# AquaPalladium â€” Cleaning Frequency Prediction
+# AquaPalladium — Cleaning Frequency Prediction
 
 ## 1. Overview
 
@@ -93,15 +93,15 @@ For example, an MAE of 0.64 means predictions differ from actual values by appro
 
 Lower MAE is better.
 
-### RÂ² score
+### R² score
 
-RÂ² measures how much variation in the target is explained by the model relative to a mean-prediction baseline.
+R² measures how much variation in the target is explained by the model relative to a mean-prediction baseline.
 
-- An RÂ² of 1 indicates perfect predictions.
-- An RÂ² of 0 indicates performance comparable to predicting the target mean.
-- A negative RÂ² indicates performance worse than that baseline on the evaluated data.
+- An R² of 1 indicates perfect predictions.
+- An R² of 0 indicates performance comparable to predicting the target mean.
+- A negative R² indicates performance worse than that baseline on the evaluated data.
 
-RÂ² does not establish that the model captures real physical mechanisms.
+R² does not establish that the model captures real physical mechanisms.
 
 ## 6. Model evaluation results
 
@@ -109,7 +109,7 @@ The following results were obtained from experiments using the available dataset
 
 ### Main model comparison
 
-| Model | MAE | RÂ² |
+| Model | MAE | R² |
 |---|---:|---:|
 | Random Forest, all 11 features | 0.6353 | 0.6520 |
 | Random Forest, six selected features | 0.6415 | 0.6449 |
@@ -128,7 +128,7 @@ The feed-flow-only models do not reproduce the performance of the multivariable 
 
 The robustness audit repeated the 80/20 train/test split with five random seeds: 7, 21, 42, 84, and 123.
 
-| Model | Mean MAE | MAE standard deviation | Mean RÂ² |
+| Model | Mean MAE | MAE standard deviation | Mean R² |
 |---|---:|---:|---:|
 | Random Forest, all 11 features | 0.6335 | 0.0029 | 0.6570 |
 | Random Forest, six selected features | 0.6387 | 0.0030 | 0.6504 |
@@ -142,8 +142,8 @@ A separate five-fold cross-validation experiment on a deterministic 25,000-recor
 
 - Mean MAE: 0.720
 - MAE standard deviation: 0.008
-- Mean RÂ²: 0.570
-- RÂ² standard deviation: 0.005
+- Mean R²: 0.570
+- R² standard deviation: 0.005
 - Median-baseline MAE: 1.078
 
 These figures differ from the random holdout results because the experiments use different evaluation procedures and sample sizes. They should not be presented as if they came from the same test set.
@@ -221,14 +221,14 @@ Consequently, the model should not yet be used to prescribe cleaning schedules o
 
 Relevant project scripts include:
 
-- `src/validate_cleaning_model.py` â€” cross-validation experiment.
-- `src/audit_cleaning_target.py` â€” target and baseline audit.
-- `src/analyze_cleaning_relationships.py` â€” exploratory relationship analysis.
-- `src/compare_cleaning_models.py` â€” comparison of feature sets and baselines.
-- `src/compare_cleaning_feature_sets.py` â€” feature-set comparison.
-- `src/audit_cleaning_robustness.py` â€” repeated holdout and permutation-importance audit.
-- `src/audit_cleaning_target_patterns.py` â€” target distribution and feature-pattern analysis.
-- `src/compare_flow_conditional_models.py` â€” comparison with feed-flow-based baselines.
+- `src/validate_cleaning_model.py` — cross-validation experiment.
+- `src/audit_cleaning_target.py` — target and baseline audit.
+- `src/analyze_cleaning_relationships.py` — exploratory relationship analysis.
+- `src/compare_cleaning_models.py` — comparison of feature sets and baselines.
+- `src/compare_cleaning_feature_sets.py` — feature-set comparison.
+- `src/audit_cleaning_robustness.py` — repeated holdout and permutation-importance audit.
+- `src/audit_cleaning_target_patterns.py` — target distribution and feature-pattern analysis.
+- `src/compare_flow_conditional_models.py` — comparison with feed-flow-based baselines.
 
 Run scripts from the repository root in the project's activated Python virtual environment. For example:
 

@@ -1,4 +1,4 @@
-# AquaPalladium ðŸŒŠ
+# AquaPalladium 🌊
 
 **Desalination analytics, sensor monitoring, and exploratory machine learning using Python.**
 
@@ -91,28 +91,28 @@ Raw datasets are not automatically included in version control. Before publishin
 
 ```text
 AquaPalladium/
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ raw/
-â”‚   â””â”€â”€ processed/
-â”œâ”€â”€ docs/
-â”œâ”€â”€ outputs/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ analytics.py
-â”‚   â”œâ”€â”€ data_audit.py
-â”‚   â”œâ”€â”€ data_generator.py
-â”‚   â”œâ”€â”€ experimental_analytics.py
-â”‚   â”œâ”€â”€ load_wave_dataset.py
-â”‚   â”œâ”€â”€ period_analysis.py
-â”‚   â”œâ”€â”€ statistical_analysis.py
-â”‚   â”œâ”€â”€ visualization.py
-â”‚   â”œâ”€â”€ anomaly_detection.py
-â”‚   â”œâ”€â”€ data_quality_report.py
-â”‚   â””â”€â”€ ... exploratory audit scripts
-â”œâ”€â”€ tests/
-â”œâ”€â”€ app.py
-â”œâ”€â”€ main.py
-â”œâ”€â”€ requirements.txt
-â””â”€â”€ README.md
+├── data/
+│   ├── raw/
+│   â””── processed/
+├── docs/
+├── outputs/
+├── src/
+│   ├── analytics.py
+│   ├── data_audit.py
+│   ├── data_generator.py
+│   ├── experimental_analytics.py
+│   ├── load_wave_dataset.py
+│   ├── period_analysis.py
+│   ├── statistical_analysis.py
+│   ├── visualization.py
+│   ├── anomaly_detection.py
+│   ├── data_quality_report.py
+│   â””── ... exploratory audit scripts
+├── tests/
+├── app.py
+├── main.py
+├── requirements.txt
+â””── README.md
 ```
 
 Generated reports and intermediate outputs are stored under `outputs/`. The precise set of analysis scripts may evolve as the project develops.
@@ -153,7 +153,7 @@ The repository also contains scripts for Isolation Forest anomaly detection, ano
 
 In the inspected version of the sensor dataset, the cleaning-frequency Random Forest evaluation produced the following results across five random 80/20 train/test splits:
 
-| Model | Mean MAE | MAE standard deviation | Mean RÂ² |
+| Model | Mean MAE | MAE standard deviation | Mean R² |
 |---|---:|---:|---:|
 | Median baseline | 1.0799 | 0.0076 | Approximately 0 |
 | Six-feature model | 0.6387 | 0.0030 | 0.6504 |
